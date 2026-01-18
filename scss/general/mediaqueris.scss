@@ -4,194 +4,241 @@
     main{
         overflow-x: hidden;
     }
-    header{
-        padding: 16px;
-        .navbar{
-            width: 100%;
+    header {
+          padding: 4px 16px;
         }
-        .puie-nav{
-            width: 100%;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-        }
-        .navbar-brand{
-            order: 2;
-            position: absolute;
-            left: 47%;
-            top: 24px;
-        }
-        .navbar-toggler{
-            border: none;
-            background-color: #F9F9F9;
-        }
-        .button.nvbar-togg{
-            background-color: #F9F9F9;
-        }
-    }
-
-    #hero{
-        .desk{
-            display: none;
-        }
-        .mobile{
-            display: flex;
-        }
-    }
-
-    // Banner mobile
     
-    .banner-home{
-        width: 100%;
-    }
 
+    
 
-    /* Seccion mayoristas-sobre nosotros mobile */
-
-    #sobreNosotrosSection {
-        flex-direction: column;
-        width: 100%;
-        .img-sobre-nosotros {
-            width: 100%;
-            img {
-                width: 100%;
-                height: 500px;
-                object-fit: cover;
+    /* HERO MOBILE */
+            #hero {
+              height: auto; // dejamos que crezca con el contenido
+              margin-top: 40px;
             }
-        }
-    }
-    
-
-    .nosotros-mayoristas {
-        order: 2;
-        width: 100%;
-        background-color: white;
-        padding-bottom: 30px;
-        h2 {
-            margin-top: 50px;
-            background-color: white;
-        }
-        p {
-            background-color: white;
-            padding: 6px 20px;
-            font-size: 16px;
-            line-height: 1.5;
-        }
-    }
-    
-
-    #tools {
-        margin-top: 420px;
-        padding: 200px 16px 70px 16px;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        p {
-            text-align: center;
-            font-size: 20px;
-            padding-bottom: 30px;
-            padding-right: 20px;
-            padding-left: 20px;
-        }
-        .clientes-logos{
-            width: 98%;
-            flex-wrap: wrap;
-            .foto-cliente {
-                width: 26%;
-                padding-right: 12px;
-                padding-left: 12px;
-                padding-bottom: 36px;
+          
+            /* Ocultar logo superpuesto */
+            .hero-logo {
+              display: none;
             }
-        }
-    }
-    
-    
-
-    
-
-    footer {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: top;
-        background-color: white;
-        padding: 20px 40px;
-        ul{
-            background-color: white;
-            padding-top: 16px;
-            padding-left: 0rem;
-            li {
-                font-size: 14px;
-                font-weight: 600;
-                background-color: #ffffff;
-                color: #4B4B4B;
-                padding-bottom: 12px;
-                a {
-                    color: #4B4B4B;
-                    background-color: white;
-                    text-decoration: none;
-                    font-size: 14px;
-                }
+          
+            /* Frame pasa a columna */
+            .hero-frame {
+              flex-direction: column;
+              margin: 16px; // más compacto en mobile
+              gap: 10px;
             }
-        }
-        h1 {
-            font-size: 16px;
-            font-weight: 400;
-            background-color: white;
-        }
-        h2 {
-            background-color: white;
-            u{
-                text-decoration: underline;
-                text-decoration-color: #F8C76B;
-                text-underline-offset: 7px;
+          
+            /* Ambas imágenes ocupan todo el ancho */
+            .hero-image {
+              width: 100%;
+              border-radius: 15px;
             }
-        }
-        .titulo-footer {
-            color: #98A2B3;
-            padding-bottom: 16px;
-        }
-        div {
-            padding-right: 0px;
-            background-color: white;
-        }
-        
-    }
-    
-
-    /* Productos mobile */
-    
-    #projectsSection{
-        margin-left: 20px;
-        margin-right: 20px;
-        .container{
-            .card-puie {
-                margin-bottom: 30px;
-                padding: 32px;    
-                border-radius: 8px;
-                border-style: none;
-                h4 {
-                    padding-bottom: 6px;
-                }
-                p {
-                    padding-bottom: 0px;
-                }
+          
+            /* Imagen 1 → 20% del alto de la pantalla */
+            .hero-image-large {
+              flex: none;
+              height: 30vh;
             }
-        }
-    }
-    
+          
+            /* Imagen 2 → 70% del alto de la pantalla */
+            .hero-image-small {
+              flex: none;
+              height: 60vh;
+            }
+          
+            /* FEATURE · MOBILE */
 
-     /* Footer mobile */
-
-    .derechos-reservados {
-        width: 100%;
-        padding: 18px 16px;
-        p {
-            font-size: 14px;
-            font-weight: 400;
-            color: #98A2B3;
-        }
+    /* ocultar imágenes */
+    .feature-left,
+    .feature-right-image {
+    display: none;
     }
-    
+
+    /* frame pasa a ser solo texto */
+    .feature-frame {
+    height: auto;
+    padding: 1px 16px; // 👈 10 arriba/abajo · 16 laterales
+    }
+
+    /* texto ocupa todo el ancho */
+    .feature-right {
+    flex: 1;
+    height: auto;
+    }
+
+    /* texto alineado a la izquierda */
+    .feature-text {
+    height: auto;
+    padding: 0;
+    }
+
+    .feature-text p {
+    max-width: 70%;
+    text-align: right;
+    font-size: 16px;
+    }
+
+
+    /* MANIFESTO · MOBILE */
+
+.manifesto-inner {
+    padding: 40px 16px 60px; // 👈 laterales 16px
+  }
+  
+  .manifesto-content {
+    flex-direction: column;
+  }
+  
+  .manifesto-text {
+    width: 70%;
+  }
+  
+  .manifesto-empty {
+    display: none;
+  }
+
+  .manifesto-text h2 {
+    max-width: 100%;
+    font-size: 52px;
+  }
+  
+  .manifesto-text p {
+    max-width: 100%;
+    font-size: 16px;
+  }
+  
+  /* COMPRA ONLINE · MOBILE */
+
+.compra-online {
+    padding: 20px 0;
+  }
+
+
+  .compra-sol {
+    position: absolute;
+    top: -120px;          // sobresale 20px hacia arriba
+    right: 5%;           // 5% desde el borde derecho
+    width: 200px;        // ajustable según diseño
+    height: auto;
+    z-index: 2;          // arriba del fondo, abajo del contenido si querés
+    background-color: transparent;
+  
+    pointer-events: none; // decorativo
+  }
+  
+  /* FRAME 1 pasa a columna */
+  .compra-frame-1 {
+    flex-direction: column;
+    padding: 0 16px;
+    gap: 16px;
+  }
+  
+  .compra-content {
+    width: 90%;
+    gap: 16px;
+  
+    h3 {
+      font-size: 60px;
+    }
+  }
+
+  /* IMAGEN */
+  .compra-image {
+    width: 100%;
+    height: 50vh;
+    aspect-ratio: auto;
+  }
+  
+  /* TEXTO + BOTÓN */
+  .compra-content {
+    width: 100%;
+    gap: 16px;
+  }
+  
+  /* FRAME 2 */
+  .compra-frame-2 {
+    margin-top: 24px;
+  }
+
+    /* TEXTO */
+    .compra-frame-2 p {
+        padding: 12px 16px 1px 16px;
+        font-size: 16px;
+        line-height: 1.5;
+        color: $amarillofondo;
+        box-sizing: border-box;
+        background-color: $verde;
+      }
+  
+
+      /* FOTOS USUARIOS · MOBILE */
+
+.fotos-usuarios {
+    display: none;
+  }
+  
+/* EN TU LOCAL · MOBILE */
+
+.en-tu-local {
+    margin: 30px 16px; // antes 30px 40px
+  }
+  
+  .en-tu-local-frame {
+    padding: 60px 26px; // antes 80px 50px
+  }
+  
+  /* =========================
+   SECCIÓN · LOGO GRANDE
+========================= */
+
+.logo-large {
+    padding: 20px 16px;
+  }
+  
+/* FOOTER · MOBILE */
+
+.footer-wrapper {
+    padding: 0 16px; // antes 40px
+  }
+  
+  /* FRAME EXTERNO */
+  .footer-frame {
+    flex-direction: column;
+    padding: 40px 30px; // antes 40px 60px
+    gap: 32px;
+  }
+  
+  /* TEXTO (LISTAS) */
+  .footer-text {
+    flex-direction: row;
+    gap: 46px;
+    padding-top: 0;
+  }
+  
+  /* LOGO */
+  .footer-logo {
+    justify-content: flex-end;
+  }
+  
+  .footer-logo img {
+    width: 90%; // opcional, más cómodo en mobile
+    max-width: 400px;
+  }
+  
+  /* DERECHOS */
+  .derechos-reservados {
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px; // antes 20px 60px
+  }
+  
+  /* LOGOS DERECHOS */
+  .derechos-logos {
+    justify-content: flex-start;
+  }
+  
+
+
 }
+        

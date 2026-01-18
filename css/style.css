@@ -680,166 +680,186 @@ button.secundario:hover a {
     overflow-x: hidden;
   }
   header {
-    padding: 16px;
+    padding: 4px 16px;
   }
-  header .navbar {
-    width: 100%;
+  /* HERO MOBILE */
+  #hero {
+    height: auto;
+    margin-top: 40px;
   }
-  header .puie-nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-  }
-  header .navbar-brand {
-    order: 2;
-    position: absolute;
-    left: 47%;
-    top: 24px;
-  }
-  header .navbar-toggler {
-    border: none;
-    background-color: #F9F9F9;
-  }
-  header .button.nvbar-togg {
-    background-color: #F9F9F9;
-  }
-  #hero .desk {
+  /* Ocultar logo superpuesto */
+  .hero-logo {
     display: none;
   }
-  #hero .mobile {
-    display: flex;
-  }
-  .banner-home {
-    width: 100%;
-  }
-  /* Seccion mayoristas-sobre nosotros mobile */
-  #sobreNosotrosSection {
+  /* Frame pasa a columna */
+  .hero-frame {
     flex-direction: column;
+    margin: 16px;
+    gap: 10px;
+  }
+  /* Ambas imágenes ocupan todo el ancho */
+  .hero-image {
     width: 100%;
+    border-radius: 15px;
   }
-  #sobreNosotrosSection .img-sobre-nosotros {
+  /* Imagen 1 → 20% del alto de la pantalla */
+  .hero-image-large {
+    flex: none;
+    height: 30vh;
+  }
+  /* Imagen 2 → 70% del alto de la pantalla */
+  .hero-image-small {
+    flex: none;
+    height: 60vh;
+  }
+  /* FEATURE · MOBILE */
+  /* ocultar imágenes */
+  .feature-left,
+  .feature-right-image {
+    display: none;
+  }
+  /* frame pasa a ser solo texto */
+  .feature-frame {
+    height: auto;
+    padding: 1px 16px;
+  }
+  /* texto ocupa todo el ancho */
+  .feature-right {
+    flex: 1;
+    height: auto;
+  }
+  /* texto alineado a la izquierda */
+  .feature-text {
+    height: auto;
+    padding: 0;
+  }
+  .feature-text p {
+    max-width: 70%;
+    text-align: right;
+    font-size: 16px;
+  }
+  /* MANIFESTO · MOBILE */
+  .manifesto-inner {
+    padding: 40px 16px 60px;
+  }
+  .manifesto-content {
+    flex-direction: column;
+  }
+  .manifesto-text {
+    width: 70%;
+  }
+  .manifesto-empty {
+    display: none;
+  }
+  .manifesto-text h2 {
+    max-width: 100%;
+    font-size: 52px;
+  }
+  .manifesto-text p {
+    max-width: 100%;
+    font-size: 16px;
+  }
+  /* COMPRA ONLINE · MOBILE */
+  .compra-online {
+    padding: 20px 0;
+  }
+  .compra-sol {
+    position: absolute;
+    top: -120px;
+    right: 5%;
+    width: 200px;
+    height: auto;
+    z-index: 2;
+    background-color: transparent;
+    pointer-events: none;
+  }
+  /* FRAME 1 pasa a columna */
+  .compra-frame-1 {
+    flex-direction: column;
+    padding: 0 16px;
+    gap: 16px;
+  }
+  .compra-content {
+    width: 90%;
+    gap: 16px;
+  }
+  .compra-content h3 {
+    font-size: 60px;
+  }
+  /* IMAGEN */
+  .compra-image {
     width: 100%;
+    height: 50vh;
+    aspect-ratio: auto;
   }
-  #sobreNosotrosSection .img-sobre-nosotros img {
+  /* TEXTO + BOTÓN */
+  .compra-content {
     width: 100%;
-    height: 500px;
-    object-fit: cover;
+    gap: 16px;
   }
-  .nosotros-mayoristas {
-    order: 2;
-    width: 100%;
-    background-color: white;
-    padding-bottom: 30px;
+  /* FRAME 2 */
+  .compra-frame-2 {
+    margin-top: 24px;
   }
-  .nosotros-mayoristas h2 {
-    margin-top: 50px;
-    background-color: white;
-  }
-  .nosotros-mayoristas p {
-    background-color: white;
-    padding: 6px 20px;
+  /* TEXTO */
+  .compra-frame-2 p {
+    padding: 12px 16px 1px 16px;
     font-size: 16px;
     line-height: 1.5;
+    color: #F5F1E9;
+    box-sizing: border-box;
+    background-color: #1F2622;
   }
-  #tools {
-    margin-top: 420px;
-    padding: 200px 16px 70px 16px;
-    align-items: center;
-    display: flex;
+  /* FOTOS USUARIOS · MOBILE */
+  .fotos-usuarios {
+    display: none;
+  }
+  /* EN TU LOCAL · MOBILE */
+  .en-tu-local {
+    margin: 30px 16px;
+  }
+  .en-tu-local-frame {
+    padding: 60px 26px;
+  }
+  /* =========================
+     SECCIÓN · LOGO GRANDE
+  ========================= */
+  .logo-large {
+    padding: 20px 16px;
+  }
+  /* FOOTER · MOBILE */
+  .footer-wrapper {
+    padding: 0 16px;
+  }
+  /* FRAME EXTERNO */
+  .footer-frame {
     flex-direction: column;
+    padding: 40px 30px;
+    gap: 32px;
   }
-  #tools p {
-    text-align: center;
-    font-size: 20px;
-    padding-bottom: 30px;
-    padding-right: 20px;
-    padding-left: 20px;
+  /* TEXTO (LISTAS) */
+  .footer-text {
+    flex-direction: row;
+    gap: 46px;
+    padding-top: 0;
   }
-  #tools .clientes-logos {
-    width: 98%;
-    flex-wrap: wrap;
+  /* LOGO */
+  .footer-logo {
+    justify-content: flex-end;
   }
-  #tools .clientes-logos .foto-cliente {
-    width: 26%;
-    padding-right: 12px;
-    padding-left: 12px;
-    padding-bottom: 36px;
+  .footer-logo img {
+    width: 90%;
+    max-width: 400px;
   }
-  footer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: top;
-    background-color: white;
-    padding: 20px 40px;
-  }
-  footer ul {
-    background-color: white;
-    padding-top: 16px;
-    padding-left: 0rem;
-  }
-  footer ul li {
-    font-size: 14px;
-    font-weight: 600;
-    background-color: #ffffff;
-    color: #4B4B4B;
-    padding-bottom: 12px;
-  }
-  footer ul li a {
-    color: #4B4B4B;
-    background-color: white;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  footer h1 {
-    font-size: 16px;
-    font-weight: 400;
-    background-color: white;
-  }
-  footer h2 {
-    background-color: white;
-  }
-  footer h2 u {
-    text-decoration: underline;
-    text-decoration-color: #F8C76B;
-    text-underline-offset: 7px;
-  }
-  footer .titulo-footer {
-    color: #98A2B3;
-    padding-bottom: 16px;
-  }
-  footer div {
-    padding-right: 0px;
-    background-color: white;
-  }
-  /* Productos mobile */
-  #projectsSection {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  #projectsSection .container .card-puie {
-    margin-bottom: 30px;
-    padding: 32px;
-    border-radius: 8px;
-    border-style: none;
-  }
-  #projectsSection .container .card-puie h4 {
-    padding-bottom: 6px;
-  }
-  #projectsSection .container .card-puie p {
-    padding-bottom: 0px;
-  }
-  /* Footer mobile */
+  /* DERECHOS */
   .derechos-reservados {
-    width: 100%;
-    padding: 18px 16px;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
   }
-  .derechos-reservados p {
-    font-size: 14px;
-    font-weight: 400;
-    color: #98A2B3;
+  /* LOGOS DERECHOS */
+  .derechos-logos {
+    justify-content: flex-start;
   }
 }
 
