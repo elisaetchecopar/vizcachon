@@ -1,119 +1,17 @@
-#hero {
-  width: 100%;
-  height: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 60px;
-}
-#hero .fondo {
-  position: absolute;
-  width: 20%;
-  top: 22%;
-  right: 40%;
-}
-#hero .hi {
-  z-index: 1000;
-  text-align: center;
-  background-color: rgba(255, 0, 0, 0);
-}
-#hero .hi p {
-  background-color: rgba(255, 0, 0, 0);
-}
-#hero .hi h3 {
-  font-size: 80px;
-  background-color: rgba(255, 0, 0, 0);
-}
+/* Error: Undefined variable.
+ *    ,
+ * 46 |     border: 1px solid $verde;
+ *    |                       ^^^^^^
+ *    '
+ *   scss/pages/home.scss 46:23  root stylesheet */
 
-#tools {
-  padding: 200px 60px 100px 60px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 46 \2502      border: 1px solid $verde;\a    \2502                        ^^^^^^\a    \2575 \a   scss/pages/home.scss 46:23  root stylesheet";
 }
-#tools p {
-  text-align: center;
-  padding-bottom: 40px;
-}
-#tools .clientes-logos {
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-#tools .clientes-logos .foto-cliente {
-  width: 10%;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 40px;
-}
-
-#sobreNosotrosSection {
-  display: flex;
-  flex-direction: row;
-  height: 75%;
-}
-#sobreNosotrosSection .img-sobre-nosotros {
-  width: 50%;
-}
-#sobreNosotrosSection .img-sobre-nosotros img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  object-position: center !important;
-}
-
-.nosotros-mayoristas {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: white;
-}
-.nosotros-mayoristas h2 {
-  background-color: white;
-  padding-bottom: 20px;
-}
-.nosotros-mayoristas p {
-  background-color: white;
-  padding: 0px 15%;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-.banner-productos {
-  width: 100%;
-  padding-bottom: 60px;
-}
-
-#projectsSection {
-  margin-left: 60px;
-  margin-right: 60px;
-  padding-bottom: 100px;
-  padding-top: 100px;
-}
-#projectsSection .projects {
-  display: flex;
-  flex-direction: row;
-}
-#projectsSection .projects .card-project {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: none;
-  border-style: none;
-  padding-bottom: 16px;
-}
-#projectsSection .projects .card-project:hover {
-  border-style: solid;
-  border-color: #F9F9F9;
-}
-#projectsSection .projects .card-project img {
-  width: 100%;
-  height: auto;
-}
-
-/*# sourceMappingURL=home.css.map */

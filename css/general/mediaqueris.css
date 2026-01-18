@@ -28,28 +28,11 @@
   header .button.nvbar-togg {
     background-color: #F9F9F9;
   }
-  #hero {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-  }
-  #hero .fondo {
+  #hero .desk {
     display: none;
   }
-  #hero .hi {
-    z-index: 1000;
-    text-align: center;
-    background-color: rgba(255, 0, 0, 0);
-  }
-  #hero .hi p {
-    background-color: rgba(255, 0, 0, 0);
-  }
-  #hero .hi h3 {
-    font-size: 80px;
-    background-color: rgba(255, 0, 0, 0);
+  #hero .mobile {
+    display: flex;
   }
   .banner-home {
     width: 100%;

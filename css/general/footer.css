@@ -1,58 +1,17 @@
-footer {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: top;
-  background-color: white;
-  padding: 40px 60px;
-}
-footer ul {
-  background-color: white;
-  padding-top: 16px;
-  padding-left: 0rem;
-}
-footer ul li {
-  font-size: 14px;
-  font-weight: 600;
-  background-color: #ffffff;
-  color: #4B4B4B;
-  padding-bottom: 12px;
-}
-footer ul li a {
-  color: #4B4B4B;
-  background-color: white;
-  text-decoration: none;
-  font-size: 14px;
-}
-footer h1 {
-  font-size: 16px;
-  font-weight: 400;
-  background-color: white;
-}
-footer h2 {
-  background-color: white;
-}
-footer h2 u {
-  text-decoration: underline;
-  text-decoration-color: #F8C76B;
-  text-underline-offset: 7px;
-}
-footer .titulo-footer {
-  color: #98A2B3;
-  padding-bottom: 16px;
-}
-footer div {
-  padding-right: 250px;
-  background-color: white;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 14 |     border: 1px solid $verde;
+ *    |                       ^^^^^^
+ *    '
+ *   scss/general/footer.scss 14:23  root stylesheet */
 
-.derechos-reservados {
-  padding: 20px 60px;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 14 \2502      border: 1px solid $verde;\a    \2502                        ^^^^^^\a    \2575 \a   scss/general/footer.scss 14:23  root stylesheet";
 }
-.derechos-reservados p {
-  font-size: 14px;
-  font-weight: 400;
-  color: #98A2B3;
-}
-
-/*# sourceMappingURL=footer.css.map */

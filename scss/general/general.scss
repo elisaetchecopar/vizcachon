@@ -1,5 +1,5 @@
 * {
-    background-color: #F9F9F9;
+    background-color: $amarillofondo;
     padding: 0;
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -25,11 +25,11 @@ p {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 60px;
 }
 
 h3 {
-    font-size: 48px;
+    font-size: 78px;
 }
 
 h4 {
@@ -46,28 +46,28 @@ h6{
 
 /* Buttons */
 .primario {
-    background-color: #F8C76B;
-    padding: 8px 16px;
-    border-radius: 4px;
-    border-style: none;
+    background-color: transparent;
+    padding: 4px 8px;
+    border-radius: 12px;
+    border: 1px solid $verde;
+    color: $verde;
+
     a {
-        background-color: #F8C76B;
+        background-color: transparent;
         text-decoration: none;
-        color: white;
-        font-size: 16px;
+        color: $verde;
+        font-size: 12px;
         font-weight: 600;
         display: inline-block;
     }
-    img{
-        background-color: #F8C76B;
-    }
+
     &:hover{
-        background-color: #e7b75e;
+        background-color: #f0eade;
         a{
-            background-color: #e7b75e;
+            background-color: #f0eade;
         }
         img{
-            background-color: #e7b75e;
+            background-color: #f0eade;
         }
     }
 }
@@ -111,3 +111,5 @@ h6{
         transform: translatey(8px);
     }
 }
+
+

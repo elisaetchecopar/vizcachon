@@ -1,124 +1,496 @@
 // Banner
+/* ======================
+   HERO
+====================== */
 
-#hero{
+#hero {
     width: 100%;
+    height: 90vh;
+    position: relative;
+  }
+  
+  /* LOGO SUPERPUESTO */
+  .hero-logo {
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+  
+    width: 78vw;
+    display: flex;
+    justify-content: center;
+  
+    background-color: transparent;
+    pointer-events: none;
+  }
+  
+  .hero-logo img {
+    width: 100%;
+    max-width: 1500px;
+    height: auto;
+    display: block;
+    background-color: transparent;
+  }
+  
+  /* FRAME DE IMÁGENES */
+  .hero-frame {
+    height: 100%;
+    margin: 40px 40px 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* IMÁGENES */
+  .hero-image {
+    border: 1px solid $verde;
+    border-radius: 30px;
+    overflow: hidden;
+  }
+  
+  .hero-image-large {
+    flex: 0 0 71%;
+  }
+  
+  .hero-image-small {
+    flex: 0 0 28%;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  /* ======================
+     FEATURE SECTION
+  ====================== */
+  
+  .feature-frame {
+    width: 100%;
+    height: 80vh;
+    padding: 10px 40px 60px 40px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* IZQUIERDA */
+  .feature-left {
+    flex: 0 0 50%;
+    height: 100%;
+  }
+  
+  .feature-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid $verde;
+    border-radius: 30px;
+    display: block;
+  }
+  
+  /* DERECHA */
+  .feature-right {
+    flex: 0 0 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* IMAGEN DERECHA */
+  .feature-right-image {
+    height: 65%;
+  }
+  
+  .feature-right-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid $verde;
+    border-radius: 30px;
+    display: block;
+  }
+  
+  /* TEXTO */
+  .feature-text {
     height: 70%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-    .fondo{
-        position: absolute;
-        width: 20%;
-        top: 22%;
-        right: 40%;
-    }
-    .hi{
-        z-index: 1000;
-        text-align: center;
-        background-color: rgba(255, 0, 0, 0);
-        p{
-            background-color: rgba(255, 0, 0, 0);
-        }
-        h3{
-            font-size: 80px;
-            background-color: rgba(255, 0, 0, 0);
-        }
-    }
-}
-
-
-#tools{
-    padding: 200px 60px 100px 60px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    p{
-        text-align: center;
-        padding-bottom: 40px;    
-    }
-    .clientes-logos{
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        .foto-cliente {
-            width: 10%;
-            padding-right: 20px;
-            padding-left: 20px;
-            padding-bottom: 40px;
-        }
-    }
-    
-}
-
-#sobreNosotrosSection {
-    display: flex;
-    flex-direction: row;
-    height: 75%;
-    .img-sobre-nosotros {
-        width: 50%;
-        img{
-            height: 100%;
-            width: 100%;
-            object-fit: cover;
-            object-position: center !important;
-        }
-    }
-}
-
-.nosotros-mayoristas {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: white;
-    h2 {
-        background-color: white;
-        padding-bottom: 20px;
-    }
-    p {
-        background-color: white;
-        padding: 0px 15%;
-        font-size: 16px;
-        line-height: 1.5;
-    }
-}
-
-.banner-productos {
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+  
+  .feature-text p {
+    max-width: 60%;
+    text-align: right;
+    font-size: 18px;
+    line-height: 1.4;
+    color: $verde;
+  }
+  
+  /* ======================
+     MANIFESTO
+  ====================== */
+  
+  .manifesto {
     width: 100%;
-    padding-bottom: 60px;
-}
+  }
+  
+  /* línea full width */
+  .manifesto-line {
+    width: 100%;
+    height: 1px;
+    background-color: $verde;
+  }
+  
+  /* frame interno con padding */
+  .manifesto-inner {
+    padding: 60px 80px 80px;
+  }
+  
+  /* layout */
+  .manifesto-content {
+    display: flex;
+    width: 100%;
+  }
+  
+  /* texto */
+  .manifesto-text {
+    width: 50%;
+  }
+  
+  .manifesto-text h2 {
+    line-height: 1.2;
+    margin-bottom: 24px;
+    color: $verde;
+  }
+  
+  .manifesto-text p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: $verde;
+    max-width: 90%;
+  }
+  
+  /* columna vacía */
+  .manifesto-empty {
+    width: 50%;
+  }
+  
+ /* =========================
+   COMPRA ONLINE
+========================= */
 
 
-#projectsSection{
-    margin-left: 60px;
-    margin-right: 60px;
-    padding-bottom: 100px;
-    padding-top: 100px;
-    .projects{
-        display: flex;
-        flex-direction: row;
-        .card-project {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: none;
-        border-style: none;
-        padding-bottom: 16px;
-        &:hover {
-            border-style: solid;
-            border-color: #F9F9F9;
-        }
-        img {
-            width: 100%;
-            height: auto;
-        }
-        }
+
+  .compra-online {
+    width: 100%;
+    background-color: $verde;
+    color: $amarillofondo;
+    padding: 60px 0 20px;
+    box-sizing: border-box;
+    position: relative; // 👈 clave para el absoluto
+    overflow: visible; // permite que sobresalga
+  }
+  
+  .compra-sol {
+    position: absolute;
+    top: -50px;          // sobresale 20px hacia arriba
+    right: 5%;           // 5% desde el borde derecho
+    width: 250px;        // ajustable según diseño
+    height: auto;
+    z-index: 2;          // arriba del fondo, abajo del contenido si querés
+    background-color: transparent;
+  
+    pointer-events: none; // decorativo
+  }
+
+  /* =========================
+     FRAME 1
+  ========================= */
+  
+  .compra-frame-1 {
+    width: 100%;
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    box-sizing: border-box;
+    background-color: $verde;
+  }
+  
+  /* IMAGEN */
+  .compra-image {
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    border: 1px solid $amarillofondo;
+    border-radius: 30px;
+    overflow: hidden;
+    flex-shrink: 0;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
-}
+  }
+  
+  /* TEXTO */
+  .compra-content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: $verde;
+  
+    h3 {
+      line-height: 1.2;
+      color: $amarillofondo;
+      background-color: $verde;
+    }
+  }
+  
+  /* =========================
+     BOTÓN SECUNDARIO
+  ========================= */
+  
+  button.secundario {
+    background-color: transparent;
+    border: 1px solid $amarillofondo;
+    border-radius: 12px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: fit-content;
+  
+    a {
+      text-decoration: none;
+      color: $amarillofondo;
+      font-size: 16px;
+      font-weight: 600;
+      display: block;
+      background-color: $verde;
+    }
+  
+    &:hover {
+      background-color: $amarillofondo;
+  
+      a {
+        color: $verde;
+      }
+    }
+  }
+  
+  /* =========================
+     FRAME 2
+  ========================= */
+  
+  .compra-frame-2 {
+    width: 100%;
+    margin-top: 40px;
+    background-color: $verde;
+  }
+  
+  /* TEXTO */
+  .compra-frame-2 p {
+    padding: 12px 80px 1px 80px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: $amarillofondo;
+    box-sizing: border-box;
+    background-color: $verde;
+  }
+  
+  /* LINEA FULL WIDTH */
+  .compra-line {
+    width: 100%;
+    height: 1px;
+    background-color: $amarillofondo;
+  }
+  
 
 
+  /* =========================
+   SECCIÓN FOTOS USUARIOS
+========================= */
+
+.fotos-usuarios {
+    width: 100%;
+    padding: 60px 40px;
+    box-sizing: border-box;
+  }
+  
+  /* =========================
+     FRAME 1 · TÍTULO
+  ========================= */
+  
+  .fotos-usuarios-title {
+    padding-bottom: 20px;
+  
+    h2 {
+      font-size: 28px;
+      color: $verde;
+      text-align: left;
+    }
+  }
+  
+  /* =========================
+     FRAME 2 · GRID DE FOTOS
+  ========================= */
+  
+  .fotos-usuarios-grid {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    height: 400px; // altura base del frame (ajustable)
+    margin-bottom: 40px;
+  }
+  
+  /* BASE DE CADA FOTO */
+  .foto {
+    flex: 1;
+    border: 1px solid $verde;
+    border-radius: 30px;
+    overflow: hidden;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  }
+  
+  /* ALTURAS RELATIVAS */
+  .foto-1 {
+    height: 70%;
+    align-self: flex-start;
+  }
+  
+  .foto-2 {
+    height: 100%;
+  }
+  
+  .foto-3 {
+    height: 60%;
+    align-self: flex-start;
+  }
+  
+  .foto-4 {
+    height: 90%;
+    align-self: flex-start;
+  }
+  
+  /* =========================
+     FRAME 3 · TEXTO
+  ========================= */
+  
+  .fotos-usuarios-texto {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  
+    p {
+      width: 28%;
+      text-align: right;
+      font-size: 18px;
+      line-height: 1.5;
+      color: $verde;
+    }
+  }
+  
+
+ /* =========================
+   SECCIÓN · EN TU LOCAL
+========================= */
+
+.en-tu-local {
+    margin: 30px 40px; // 👈 ocupa todo el ancho, sin márgenes laterales
+    box-sizing: border-box;
+  }
+  
+  /* FRAME INTERNO */
+  .en-tu-local-frame {
+    width: 100%;
+    background-color: $verde;
+    border-radius: 30px;
+    box-sizing: border-box; 
+  
+    padding: 80px 50px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;      // 👈 centra horizontalmente
+    justify-content: center;  // 👈 centra verticalmente
+    gap: 20px;
+  
+    text-align: center;       // 👈 texto centrado
+  }
+  
+  /* TEXTO */
+  .en-tu-local-frame h2 {
+    color: $amarillofondo;
+    background-color: $verde;
+    font-size: 28px;
+    line-height: 1.2;
+    max-width: 900px;
+  }
+  
+  .en-tu-local-frame p {
+    color: $amarillofondo;
+    background-color: $verde;
+    line-height: 1.6;
+    max-width: 700px;
+  }
+  
+  /* BOTÓN */
+  .en-tu-local-frame button.secundario {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  .en-tu-local-frame button.secundario a {
+    display: inline-block;
+    padding: 12px 24px;
+  
+    background-color: $verde;
+  
+    border: 1px solid $amarillofondo;
+    border-radius: 12px;
+  
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+        background-color: $amarillofondo;
+    
+        a {
+          color: $verde !important;
+        }
+      }
+  }
+
+
+  /* =========================
+   SECCIÓN · LOGO GRANDE
+========================= */
+
+.logo-large {
+    width: 100%;
+    padding: 60px 40px;
+    box-sizing: border-box;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo-large img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  

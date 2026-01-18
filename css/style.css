@@ -1,61 +1,31 @@
+@charset "UTF-8";
 header {
-  background-color: #F9F9F9;
-  color: black;
-  padding-left: 60px;
-  padding-right: 60px;
+  background-color: #F5F1E9;
+  color: #1F2622;
+  padding: 4px 40px;
   font-size: 16px;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   z-index: 30000;
-}
-header .navbar-brand {
-  left: 60px;
-  position: absolute;
-  z-index: 31000;
-}
-header nav div {
-  background-color: #F9F9F9;
-}
-header nav div img {
-  background-color: #F9F9F9;
-  padding: none;
-}
-header nav div img a {
-  background-color: #F9F9F9;
-}
-header nav div ul {
-  background-color: #F9F9F9;
   display: flex;
-  flex-direction: row;
-}
-header nav div ul a {
-  color: black;
-  font-weight: 600;
-  padding: 16px 22px !important;
-  background-color: #F9F9F9;
-}
-
-.nav-item {
-  background-color: #F9F9F9;
-}
-
-header .navbar {
-  background-color: #F9F9F9;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-brand {
-  padding-left: 0px;
-  background-color: #F9F9F9;
+  display: flex;
+  align-items: center;
+}
+.navbar-brand img {
+  background-color: #F5F1E9;
+  display: block;
+  width: 120px;
 }
 
 * {
-  background-color: #F9F9F9;
+  background-color: #F5F1E9;
   padding: 0;
   margin: 0;
   font-family: "Inter", sans-serif;
@@ -81,11 +51,11 @@ p {
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 60px;
 }
 
 h3 {
-  font-size: 48px;
+  font-size: 78px;
 }
 
 h4 {
@@ -102,30 +72,28 @@ h6 {
 
 /* Buttons */
 .primario {
-  background-color: #F8C76B;
-  padding: 8px 16px;
-  border-radius: 4px;
-  border-style: none;
+  background-color: transparent;
+  padding: 4px 8px;
+  border-radius: 12px;
+  border: 1px solid #1F2622;
+  color: #1F2622;
 }
 .primario a {
-  background-color: #F8C76B;
+  background-color: transparent;
   text-decoration: none;
-  color: white;
-  font-size: 16px;
+  color: #1F2622;
+  font-size: 12px;
   font-weight: 600;
   display: inline-block;
 }
-.primario img {
-  background-color: #F8C76B;
-}
 .primario:hover {
-  background-color: #e7b75e;
+  background-color: #f0eade;
 }
 .primario:hover a {
-  background-color: #e7b75e;
+  background-color: #f0eade;
 }
 .primario:hover img {
-  background-color: #e7b75e;
+  background-color: #f0eade;
 }
 
 .secundario {
@@ -163,270 +131,548 @@ h6 {
     transform: translatey(8px);
   }
 }
-footer {
+/* =========================
+   FOOTER
+========================= */
+.footer-wrapper {
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* FRAME EXTERNO */
+.footer-frame {
   width: 100%;
+  border: 1px solid #1F2622;
+  border-radius: 30px;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: row;
-  align-items: top;
-  background-color: white;
+  justify-content: space-between;
+  align-items: stretch;
   padding: 40px 60px;
 }
-footer ul {
-  background-color: white;
-  padding-top: 16px;
-  padding-left: 0rem;
+
+/* TEXTO IZQUIERDA */
+.footer-text {
+  display: flex;
+  gap: 80px;
+  padding-top: 30px;
 }
-footer ul li {
-  font-size: 14px;
+
+/* LISTAS */
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-list p {
+  color: #1F2622;
   font-weight: 600;
-  background-color: #ffffff;
-  color: #4B4B4B;
-  padding-bottom: 12px;
+  margin-bottom: 8px;
 }
-footer ul li a {
-  color: #4B4B4B;
-  background-color: white;
+
+.footer-list a {
+  color: #1F2622;
   text-decoration: none;
-  font-size: 14px;
-}
-footer h1 {
   font-size: 16px;
-  font-weight: 400;
-  background-color: white;
 }
-footer h2 {
-  background-color: white;
+
+/* LOGO DERECHA */
+.footer-logo {
+  display: flex;
+  align-items: center;
 }
-footer h2 u {
-  text-decoration: underline;
-  text-decoration-color: #F8C76B;
-  text-underline-offset: 7px;
-}
-footer .titulo-footer {
-  color: #98A2B3;
-  padding-bottom: 16px;
-}
-footer div {
-  padding-right: 250px;
-  background-color: white;
+
+.footer-logo img {
+  width: 220px;
+  height: auto;
+  display: block;
 }
 
 .derechos-reservados {
   padding: 20px 60px;
+  background-color: #F5F1E9;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
 .derechos-reservados p {
   font-size: 14px;
   font-weight: 400;
-  color: #98A2B3;
+  color: #5f5f5f;
+  background-color: #F5F1E9;
+  margin: 0;
 }
 
+.derechos-logos {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #F5F1E9;
+}
+
+.derechos-logos img {
+  height: 22px;
+  width: auto;
+  display: block;
+}
+
+/* ======================
+   HERO
+====================== */
 #hero {
   width: 100%;
+  height: 90vh;
+  position: relative;
+}
+
+/* LOGO SUPERPUESTO */
+.hero-logo {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 78vw;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+.hero-logo img {
+  width: 100%;
+  max-width: 1500px;
+  height: auto;
+  display: block;
+  background-color: transparent;
+}
+
+/* FRAME DE IMÁGENES */
+.hero-frame {
+  height: 100%;
+  margin: 40px 40px 10px;
+  display: flex;
+  gap: 10px;
+}
+
+/* IMÁGENES */
+.hero-image {
+  border: 1px solid #1F2622;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.hero-image-large {
+  flex: 0 0 71%;
+}
+
+.hero-image-small {
+  flex: 0 0 28%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ======================
+   FEATURE SECTION
+====================== */
+.feature-frame {
+  width: 100%;
+  height: 80vh;
+  padding: 10px 40px 60px 40px;
+  display: flex;
+  gap: 10px;
+}
+
+/* IZQUIERDA */
+.feature-left {
+  flex: 0 0 50%;
+  height: 100%;
+}
+
+.feature-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #1F2622;
+  border-radius: 30px;
+  display: block;
+}
+
+/* DERECHA */
+.feature-right {
+  flex: 0 0 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* IMAGEN DERECHA */
+.feature-right-image {
+  height: 65%;
+}
+
+.feature-right-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #1F2622;
+  border-radius: 30px;
+  display: block;
+}
+
+/* TEXTO */
+.feature-text {
   height: 70%;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 60px;
-}
-#hero .fondo {
-  position: absolute;
-  width: 20%;
-  top: 22%;
-  right: 40%;
-}
-#hero .hi {
-  z-index: 1000;
-  text-align: center;
-  background-color: rgba(255, 0, 0, 0);
-}
-#hero .hi p {
-  background-color: rgba(255, 0, 0, 0);
-}
-#hero .hi h3 {
-  font-size: 80px;
-  background-color: rgba(255, 0, 0, 0);
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-right: 10px;
 }
 
-#tools {
-  padding: 200px 60px 100px 60px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-#tools p {
-  text-align: center;
-  padding-bottom: 40px;
-}
-#tools .clientes-logos {
-  width: 90%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-#tools .clientes-logos .foto-cliente {
-  width: 10%;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-bottom: 40px;
+.feature-text p {
+  max-width: 60%;
+  text-align: right;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #1F2622;
 }
 
-#sobreNosotrosSection {
-  display: flex;
-  flex-direction: row;
-  height: 75%;
-}
-#sobreNosotrosSection .img-sobre-nosotros {
-  width: 50%;
-}
-#sobreNosotrosSection .img-sobre-nosotros img {
-  height: 100%;
+/* ======================
+   MANIFESTO
+====================== */
+.manifesto {
   width: 100%;
-  object-fit: cover;
-  object-position: center !important;
 }
 
-.nosotros-mayoristas {
+/* línea full width */
+.manifesto-line {
+  width: 100%;
+  height: 1px;
+  background-color: #1F2622;
+}
+
+/* frame interno con padding */
+.manifesto-inner {
+  padding: 60px 80px 80px;
+}
+
+/* layout */
+.manifesto-content {
+  display: flex;
+  width: 100%;
+}
+
+/* texto */
+.manifesto-text {
   width: 50%;
+}
+
+.manifesto-text h2 {
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: #1F2622;
+}
+
+.manifesto-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #1F2622;
+  max-width: 90%;
+}
+
+/* columna vacía */
+.manifesto-empty {
+  width: 50%;
+}
+
+/* =========================
+   COMPRA ONLINE
+========================= */
+.compra-online {
+  width: 100%;
+  background-color: #1F2622;
+  color: #F5F1E9;
+  padding: 60px 0 20px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: visible;
+}
+
+.compra-sol {
+  position: absolute;
+  top: -50px;
+  right: 5%;
+  width: 250px;
+  height: auto;
+  z-index: 2;
+  background-color: transparent;
+  pointer-events: none;
+}
+
+/* =========================
+   FRAME 1
+========================= */
+.compra-frame-1 {
+  width: 100%;
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  box-sizing: border-box;
+  background-color: #1F2622;
+}
+
+/* IMAGEN */
+.compra-image {
+  width: 40%;
+  aspect-ratio: 1/1;
+  border: 1px solid #F5F1E9;
+  border-radius: 30px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.compra-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* TEXTO */
+.compra-content {
+  width: 40%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: white;
+  gap: 24px;
+  background-color: #1F2622;
 }
-.nosotros-mayoristas h2 {
-  background-color: white;
+.compra-content h3 {
+  line-height: 1.2;
+  color: #F5F1E9;
+  background-color: #1F2622;
+}
+
+/* =========================
+   BOTÓN SECUNDARIO
+========================= */
+button.secundario {
+  background-color: transparent;
+  border: 1px solid #F5F1E9;
+  border-radius: 12px;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: fit-content;
+}
+button.secundario a {
+  text-decoration: none;
+  color: #F5F1E9;
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  background-color: #1F2622;
+}
+button.secundario:hover {
+  background-color: #F5F1E9;
+}
+button.secundario:hover a {
+  color: #1F2622;
+}
+
+/* =========================
+   FRAME 2
+========================= */
+.compra-frame-2 {
+  width: 100%;
+  margin-top: 40px;
+  background-color: #1F2622;
+}
+
+/* TEXTO */
+.compra-frame-2 p {
+  padding: 12px 80px 1px 80px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #F5F1E9;
+  box-sizing: border-box;
+  background-color: #1F2622;
+}
+
+/* LINEA FULL WIDTH */
+.compra-line {
+  width: 100%;
+  height: 1px;
+  background-color: #F5F1E9;
+}
+
+/* =========================
+   SECCIÓN FOTOS USUARIOS
+========================= */
+.fotos-usuarios {
+  width: 100%;
+  padding: 60px 40px;
+  box-sizing: border-box;
+}
+
+/* =========================
+   FRAME 1 · TÍTULO
+========================= */
+.fotos-usuarios-title {
   padding-bottom: 20px;
 }
-.nosotros-mayoristas p {
-  background-color: white;
-  padding: 0px 15%;
-  font-size: 16px;
-  line-height: 1.5;
+.fotos-usuarios-title h2 {
+  font-size: 28px;
+  color: #1F2622;
+  text-align: left;
 }
 
-.banner-productos {
-  width: 100%;
-  padding-bottom: 60px;
-}
-
-#projectsSection {
-  margin-left: 60px;
-  margin-right: 60px;
-  padding-bottom: 100px;
-  padding-top: 100px;
-}
-#projectsSection .projects {
+/* =========================
+   FRAME 2 · GRID DE FOTOS
+========================= */
+.fotos-usuarios-grid {
   display: flex;
-  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 40px;
 }
-#projectsSection .projects .card-project {
+
+/* BASE DE CADA FOTO */
+.foto {
+  flex: 1;
+  border: 1px solid #1F2622;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ALTURAS RELATIVAS */
+.foto-1 {
+  height: 70%;
+  align-self: flex-start;
+}
+
+.foto-2 {
+  height: 100%;
+}
+
+.foto-3 {
+  height: 60%;
+  align-self: flex-start;
+}
+
+.foto-4 {
+  height: 90%;
+  align-self: flex-start;
+}
+
+/* =========================
+   FRAME 3 · TEXTO
+========================= */
+.fotos-usuarios-texto {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.fotos-usuarios-texto p {
+  width: 28%;
+  text-align: right;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #1F2622;
+}
+
+/* =========================
+   SECCIÓN · EN TU LOCAL
+========================= */
+.en-tu-local {
+  margin: 30px 40px;
+  box-sizing: border-box;
+}
+
+/* FRAME INTERNO */
+.en-tu-local-frame {
+  width: 100%;
+  background-color: #1F2622;
+  border-radius: 30px;
+  box-sizing: border-box;
+  padding: 80px 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: none;
-  border-style: none;
-  padding-bottom: 16px;
-}
-#projectsSection .projects .card-project:hover {
-  border-style: solid;
-  border-color: #F9F9F9;
-}
-#projectsSection .projects .card-project img {
-  width: 100%;
-  height: auto;
-}
-
-#heroproject {
-  width: 100%;
-  height: 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 60px;
-}
-#heroproject .hi {
+  gap: 20px;
   text-align: center;
 }
-#heroproject .hi button {
-  margin-top: 12px;
-}
-#heroproject .hi h2 {
-  font-size: 60px;
+
+/* TEXTO */
+.en-tu-local-frame h2 {
+  color: #F5F1E9;
+  background-color: #1F2622;
+  font-size: 28px;
+  line-height: 1.2;
+  max-width: 900px;
 }
 
-#projectSitePuie img {
+.en-tu-local-frame p {
+  color: #F5F1E9;
+  background-color: #1F2622;
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+/* BOTÓN */
+.en-tu-local-frame button.secundario {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.en-tu-local-frame button.secundario a {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #1F2622;
+  border: 1px solid #F5F1E9;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.en-tu-local-frame button.secundario a:hover {
+  background-color: #F5F1E9;
+}
+.en-tu-local-frame button.secundario a:hover a {
+  color: #1F2622 !important;
+}
+
+/* =========================
+   SECCIÓN · LOGO GRANDE
+========================= */
+.logo-large {
   width: 100%;
-}
-
-#visit {
-  padding-top: 80px;
-}
-#visit div {
+  padding: 60px 40px;
+  box-sizing: border-box;
   display: flex;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  justify-content: center;
-}
-#visit div button {
-  margin-left: 20px;
 }
 
-#projectsSection {
-  margin-top: 50px;
-}
-#projectsSection .downproject {
-  display: flex;
-  justify-content: space-between;
-  justify-items: center;
-  margin-bottom: 12px;
-}
-
-#projectvermut {
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 120px;
-  display: flex;
-  justify-content: center;
-}
-#projectvermut div {
-  display: flex;
-  flex-direction: column;
-}
-#projectvermut img {
+.logo-large img {
   width: 100%;
-  padding-bottom: 200px;
-}
-
-#projectsSection {
-  margin-top: 50px;
-}
-#projectsSection .downproject {
-  display: flex;
-  justify-content: space-between;
-  justify-items: center;
-  margin-bottom: 12px;
-}
-
-#projectSitePuie {
-  margin-top: 60px;
-}
-#projectSitePuie img {
-  width: 100%;
-}
-
-#projectsSection {
-  margin-top: 50px;
-}
-#projectsSection .downproject {
-  display: flex;
-  justify-content: space-between;
-  justify-items: center;
-  margin-bottom: 12px;
-}
-#projectsSection .downproject p {
-  margin-bottom: 0px !important;
+  height: auto;
+  display: block;
 }
 
 @media (max-width: 1100px) {
@@ -459,28 +705,11 @@ footer div {
   header .button.nvbar-togg {
     background-color: #F9F9F9;
   }
-  #hero {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 60px;
-  }
-  #hero .fondo {
+  #hero .desk {
     display: none;
   }
-  #hero .hi {
-    z-index: 1000;
-    text-align: center;
-    background-color: rgba(255, 0, 0, 0);
-  }
-  #hero .hi p {
-    background-color: rgba(255, 0, 0, 0);
-  }
-  #hero .hi h3 {
-    font-size: 80px;
-    background-color: rgba(255, 0, 0, 0);
+  #hero .mobile {
+    display: flex;
   }
   .banner-home {
     width: 100%;

@@ -1,111 +1,17 @@
-* {
-  background-color: #F9F9F9;
-  padding: 0;
-  margin: 0;
-  font-family: "Inter", sans-serif;
-  list-style: none;
-  text-decoration: none;
-}
+/* Error: Undefined variable.
+ *   ,
+ * 2 |     background-color: $amarillofondo;
+ *   |                       ^^^^^^^^^^^^^^
+ *   '
+ *   scss/general/general.scss 2:23  root stylesheet */
 
-body {
-  overflow-x: hidden;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a   \2577 \a 2 \2502      background-color: $amarillofondo;\a   \2502                        ^^^^^^^^^^^^^^\a   \2575 \a   scss/general/general.scss 2:23  root stylesheet";
 }
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 600;
-}
-
-p {
-  font-size: 16px;
-  font-weight: 400;
-}
-
-h2 {
-  font-size: 36px;
-}
-
-h3 {
-  font-size: 48px;
-}
-
-h4 {
-  font-size: 26px;
-}
-
-h5 {
-  font-size: 14px;
-}
-
-h6 {
-  font-size: 20px;
-}
-
-/* Buttons */
-.primario {
-  background-color: #F8C76B;
-  padding: 8px 16px;
-  border-radius: 4px;
-  border-style: none;
-}
-.primario a {
-  background-color: #F8C76B;
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  font-weight: 600;
-  display: inline-block;
-}
-.primario img {
-  background-color: #F8C76B;
-}
-.primario:hover {
-  background-color: #e7b75e;
-}
-.primario:hover a {
-  background-color: #e7b75e;
-}
-.primario:hover img {
-  background-color: #e7b75e;
-}
-
-.secundario {
-  padding: 12px 24px;
-  border-radius: 30px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: black;
-}
-.secundario a {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-  font-weight: 600;
-  display: inline-block;
-}
-.secundario img {
-  background-color: none;
-}
-.secundario:hover {
-  background-color: #f0f0f0;
-}
-.secundario:hover a {
-  background-color: #f0f0f0;
-}
-.secundario:hover img {
-  background-color: #f0f0f0;
-}
-
-@keyframes flotacion {
-  0% {
-    transform: translatey(2px);
-  }
-  100% {
-    transform: translatey(8px);
-  }
-}
-
-/*# sourceMappingURL=general.css.map */
