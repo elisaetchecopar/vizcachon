@@ -91,7 +91,7 @@
   }
   
   .manifesto-text {
-    width: 70%;
+    width: 90%;
   }
   
   .manifesto-empty {
@@ -172,11 +172,50 @@
       }
   
 
-      /* FOTOS USUARIOS · MOBILE */
 
-.fotos-usuarios {
-    display: none;
-  }
+        /* SECCIÓN usuarios */
+        .fotos-usuarios {
+          padding: 60px 16px; // 👈 16px laterales
+        }
+      
+        /* OCULTAR TÍTULO */
+        .fotos-usuarios-title {
+          display: none;
+        }
+      
+        /* GRID DE FOTOS */
+        .fotos-usuarios-grid {
+          height: 60vh;        // 👈 70% del alto de la pantalla
+          gap: 0;              // opcional: sin espacio entre fotos
+        }
+      
+        /* OCULTAR FOTOS 1, 2 y 4 */
+        .foto-1,
+        .foto-2,
+        .foto-3 {
+          display: none;
+        }
+      
+        /* FOTO 3 FULL WIDTH */
+        .foto-4 {
+          flex: none;
+          width: 100%;
+          height: 100%;       // 👈 ocupa todo el alto del frame (70vh)
+          align-self: stretch;
+        }
+      
+        /* TEXTO */
+        .fotos-usuarios-texto {
+          justify-content: flex-end;
+      
+          p {
+            width: 80%;        // 👈 80% del ancho del frame
+            text-align: right; // 👈 alineado a la derecha
+            font-size: 16px;   // opcional: un poco más chico en mobile
+          }
+        }
+      
+      
   
 /* EN TU LOCAL · MOBILE */
 

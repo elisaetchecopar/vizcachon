@@ -746,7 +746,7 @@ button.secundario:hover a {
     flex-direction: column;
   }
   .manifesto-text {
-    width: 70%;
+    width: 90%;
   }
   .manifesto-empty {
     display: none;
@@ -810,9 +810,40 @@ button.secundario:hover a {
     box-sizing: border-box;
     background-color: #1F2622;
   }
-  /* FOTOS USUARIOS · MOBILE */
+  /* SECCIÓN usuarios */
   .fotos-usuarios {
+    padding: 60px 16px;
+  }
+  /* OCULTAR TÍTULO */
+  .fotos-usuarios-title {
     display: none;
+  }
+  /* GRID DE FOTOS */
+  .fotos-usuarios-grid {
+    height: 60vh;
+    gap: 0;
+  }
+  /* OCULTAR FOTOS 1, 2 y 4 */
+  .foto-1,
+  .foto-2,
+  .foto-3 {
+    display: none;
+  }
+  /* FOTO 3 FULL WIDTH */
+  .foto-4 {
+    flex: none;
+    width: 100%;
+    height: 100%;
+    align-self: stretch;
+  }
+  /* TEXTO */
+  .fotos-usuarios-texto {
+    justify-content: flex-end;
+  }
+  .fotos-usuarios-texto p {
+    width: 80%;
+    text-align: right;
+    font-size: 16px;
   }
   /* EN TU LOCAL · MOBILE */
   .en-tu-local {
