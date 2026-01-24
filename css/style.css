@@ -333,8 +333,10 @@ h6 {
 .feature-text {
   height: 70%;
   display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
+  flex-direction: column; /* uno arriba del otro */
+  align-items: flex-end; /* alineados a la derecha */
+  justify-content: flex-end; /* pegados abajo */
+  text-align: right; /* texto alineado a la derecha */
   padding-right: 10px;
 }
 
@@ -344,6 +346,15 @@ h6 {
   font-size: 18px;
   line-height: 1.4;
   color: #1F2622;
+}
+
+.feature-text h1 {
+  max-width: 60%;
+  text-align: right;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #1F2622;
+  font-weight: 600;
 }
 
 /* ======================
